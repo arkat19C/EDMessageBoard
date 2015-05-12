@@ -1,0 +1,15 @@
+<br> <br> <br> <br> <br> <br> <br>
+<table class="table">
+  <tr>
+    <th>Post Title</th>
+    <th>Time of Creation</th>
+    <th>Link to Content</th>
+  </tr>
+  <% @user_posts.each do |post| %>
+      <tr>
+        <td><div><%=post.title %></div></td>
+        <td><div><%=post.time%></div></td>
+        <td><div><a href="/post/<%=post.id%>/post-content.erb" class="btn btn-success btn-sm btn-block" role="button">Content</a></div></td>
+      </tr>
+  <% end %>
+</table>

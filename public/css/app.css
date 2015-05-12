@@ -1,0 +1,33 @@
+#landing-title {
+    text-decoration: underline;
+    font-size: 35px;
+    color: white;
+}
+
+body {
+    background-color: black !important;
+}
+
+.page-header {
+    color: white !important;
+}
+
+small {
+    color: whitesmoke;
+}
+
+a {
+    color: white !important;
+}
+
+label {
+    color: grey !important;
+}
+
+div {
+    color: grey !important;
+}
+
+#password-wrong {
+    visibility: hidden !important;
+}

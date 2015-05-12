@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>EDMessage Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css?<%= rand(100000) %>">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="page-header" style="border-bottom: 0px">
+        <h1>EDMessage<small> A Message Board for Everything EDM</small><span id="users-link" style="margin-left: 2em"><a href="/users.erb">Users</a></span><span id="home-link" style="margin-left: 1em">Home</span><span id="log-out-link" style="margin-left: 1em"><a role="button" href="/user/signout">Sign Out</a></span></h1>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<script src="/js/app.js?<%= rand(100000) %>"></script>
+
+</body>
+
+</html>

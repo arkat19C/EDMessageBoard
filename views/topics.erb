@@ -1,0 +1,21 @@
+<br> <br> <br> <br> <br> <br> <br>
+<div class="lead" style="text-decoration-color: red"><%= @message %></div>
+<form method="post" action="/topic/create" class="form-block">
+  <div class="form-group">
+    <label for="topic">Topic </label>
+    <input type="text" name="topic" class="form-control" placeholder="Topic">
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Add Topic" class="form-control btn-primary">
+  </div>
+</form>
+<table class="table">
+  <tr>
+    <th class="text-center"><span style="text-decoration: underline; font-size: 30px" class="lead">Topics</span></th>
+  </tr>
+  <% @t.each do |topic| %>
+      <tr>
+        <td><a href="/topic/<%=topic.id %>" role="button" class="btn btn-warning btn-block"><span style="color:black;"><%= topic.topic %></span></a></td>
+      </tr>
+  <% end %>
+</table>

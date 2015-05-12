@@ -1,0 +1,16 @@
+<br> <br> <br> <br> <br> <br> <br>
+<div class="lead" style="text-decoration-color: red"><%= @message %></div>
+<table class="table">
+  <tr>
+    <th>Post Title</th>
+    <th>Post Author</th>
+    <th>Time of Creation</th>
+  </tr>
+  <tr>
+    <td><div><%=@post.title %></div></td>
+    <td><div><%=@post.author %></div></td>
+    <td><div><%=@post.time%></div></td>
+  </tr>
+</table>
+<hr>
+<div class="lead"><%=@post.content%></div>

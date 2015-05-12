@@ -1,0 +1,16 @@
+<br> <br> <br> <br> <br> <br> <br>
+<form class="form-horizontal" action="/topic/<%=@t_id%>/post/create" method="post">
+  <div class="form-group">
+    <label for="post_title">Post Title: </label>
+    <div>
+        <input name="post_title" class="form-horizontal">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="post_content">Post Content:</label>
+    <textarea class="form-control" rows="10" placeholder="Post Content" name="post_content"></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" id="post-submit" class="btn btn-primary btn-lg btn-block">Create Post!</button>
+  </div>
+</form>

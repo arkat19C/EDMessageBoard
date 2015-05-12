@@ -1,0 +1,53 @@
+<br> <br> <br> <br> <br> <br> <br>
+<div class="lead" style="text-decoration-color: red"><%= @message %></div>
+<div class="lead">This form will get you signed up on EDMessage. You must fill in all inputs in order to proceed to your account.</div>
+<br>
+<form class="form-horizontal" method="post" action="/user/signup">
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <div>
+      <input type="text" class="form-control" placeholder="Username" name="username">
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <div>
+      <input type="password" class="form-control" placeholder="Password" name="password">
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="password_confirm">Reconfirm Password:</label>
+    <div>
+      <input class="form-control" type="password" placeholder="Reconfirm Password" name="password_confirm">
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="sec_q">Security Question:</label>
+    <div>
+      <select class="form-control" name="sec_q">
+        <option>What is your home town?</option>
+        <option>What was the name of your first pet?</option>
+        <option>Where do you go to school?</option>
+        <option>Who was/is your favorite teacher?</option>
+        <option>Who's your favorite celebrity?</option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="sec_a">Security Answer</label>
+    <div>
+      <input type="text" class="form-control" placeholder="Answer" name="sec_a">
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <div>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </div>
+  </div>
+</form>
+<br>

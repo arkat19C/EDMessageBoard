@@ -1,0 +1,28 @@
+<br> <br> <br> <br> <br> <br>
+<div class="lead" style="text-decoration-color: red"><%= @message %></div>
+<form class="form-horizontal" method="get" action="/user_search">
+  <div class="form-group">
+    <label for="username_search"></label>
+    <div>
+        <input name="username_search" placeholder="User" class="form-control">
+     </div>
+  </div>
+  <div>
+    <div>
+      <button type="submit" class="btn btn-primary btn-block">Search for a user!</button>
+    </div>
+  </div>
+</form>
+<br>
+<table class="table">
+  <tr>
+    <th>
+      <div class="text-center"><span style="text-decoration: underline; font-size: 30px" class="lead">Users (Manual Scroll)</span></div>
+    </th>
+  </tr>
+  <% @users.each do |user| %>
+      <tr>
+        <td><a href="/user/<%=user.id %>/posts" role="button" class="btn btn-primary btn-block"><%= user.username %></a></td>
+      </tr>
+  <% end %>
+</table>

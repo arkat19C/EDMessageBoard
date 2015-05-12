@@ -1,0 +1,26 @@
+<br> <br> <br> <br> <br> <br> <br>
+<div id="landing-title" class="text-center">Welcome to EDMessage!</div>
+<img src="/files/ultra2015.jpg" class="img-responsive center-block img-circle" width="550" height="366">
+<br>
+<div class="lead" style="text-decoration-color: red"><%= @message %></div>
+<form class="form-horizontal" method="post" action="/user/login">
+  <div class="form-group">
+    <label for="user-name-sign-in">Username:</label>
+    <div>
+      <input class="form-control" placeholder="Username" name="username_signin" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password-sign-in">Password:</label>
+    <div>
+      <input class="form-control" placeholder="Password" name="password_signin" type="password">
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <div>
+      <button type="submit" class="btn btn-primary btn-block" id="login-button">Login</button>
+    </div>
+  </div>
+  <br>
+</form>
